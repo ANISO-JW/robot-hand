@@ -286,7 +286,7 @@ footer .note{font-size:13px;color:var(--ink3);max-width:60ch;line-height:1.65}
           <div class="vlabel">03 · actuation</div>
           <h3>Eight axes on one serial bus</h3>
           <p>Two servos per finger, eight axes total, driven over a single serial bus. Each axis is calibrated individually, then a script replays the open and close sequence.</p>
-          <div class="proof"><b>Verified</b> — bus communication, per-axis offsets, repeatability.<br><b>Not yet</b> — no force feedback. Position commands only.</div>
+          <div class="proof"><b>Verified</b> — bus communication, per-axis offsets and scripted open/close motion.<br><b>Not yet</b> — no force feedback. Position commands only.</div>
         </div>
       </div>
 
@@ -296,7 +296,7 @@ footer .note{font-size:13px;color:var(--ink3);max-width:60ch;line-height:1.65}
           <div class="vlabel">04 · teleoperation</div>
           <h3>From hand tracking to hardware</h3>
           <p>I ported an open-source MediaPipe / dora-rs / Mink teleoperation pipeline to Windows and tuned IK damping and update rate for physical-hand tracking. MuJoCo serves as both renderer and kinematic model.</p>
-          <div class="proof"><b>Verified</b> — tracking, IK and hardware running end to end within usable latency.<br><b>Scope</b> — a classical geometric pipeline, not a learned policy.</div>
+          <div class="proof"><b>Verified</b> — tracking, IK and physical-hand actuation running end to end.<br><b>Scope</b> — geometric retargeting, not a learned control policy.</div>
         </div>
       </div>
 
